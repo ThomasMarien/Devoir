@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ parent() }} Accueil {% endblock %}
+       
+{% block contenu %} <h1> Tronche Book </h1> 
+ 
+ 
+    <div class="panel panel-primary">
+        <div class="panel-heading">Ajouter une actualité </div>
+         <div class="panel-body">
+            <form  class="form-signin" action="index.php?page=type" method="post" enctype="application/x-www-form-
+            urlencoded">
+            <label for="inputLibelle" class="sr-only">Libellé:</label>
+            <input type="text" id="inputLibelle" name="inputLibelle" class="form-control" placeholder="Saisir un libelle" required autofocus>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="btAjouter">Ajouter</button>
+            </form>
+         </div>    
+    </div>
+
+{% endblock %} 

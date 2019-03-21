@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ parent() }} Accueil {% endblock %}
+       
+{% block contenu %} <h1> Tronche Book </h1> 
+
+    <div class="panel panel-default">
+ <!-- Default panel contents -->
+ <div class="panel-heading"> Gestion Actualité </div>
+ 
+ <!-- Table -->
+ <div class="table-responsive">
+ <table class="table table-hover table-striped">
+ <tr><th>id</th><th>titre</th><th>contenu</th>
+ <th></th><th></th></tr>
+ {% for a in liste %}
+
+<tr><td>{{a.id}}</td><td>{{a.titre}}</td><td>{{a.contenu}}</td><td> 
+    
+
+
+ {% endfor %}
+ 
+ 
+ </table>
+ </div>
+</div>
+
+{% endblock %} 
